@@ -9,9 +9,9 @@
               <div class="banner-info">
                 <div class="container">
                   <div class="banner-info-bg text-left">
-                    <p>Better living</p>
-                    <h5>Progressive spaces for a better living</h5>
-                    <a href="about.html" class="btn btn-white">Read More</a>
+                    <p>Play offs</p>
+                    <h5>Making Sports Accessible</h5>
+                    <a href="about.php" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -20,7 +20,7 @@
                   <h4 class="number-b">1</h4>
                 </div>
                 <div class="banhny-w3grids-1">
-                  <h4><a href="#" class="hnys-title">The better way to buy real estate.</a></h4>
+                  <h4><a href="about.php" class="hnys-title">Register for the Champion Events.</a></h4>
                 </div>
               </div>
             </div>
@@ -32,9 +32,9 @@
               <div class="banner-info">
                 <div class="container">
                   <div class="banner-info-bg text-left">
-                    <p>Dream Home</p>
-                    <h5>Everyone Deserves the Opportunity of Home</h5>
-                    <a href="about.html" class="btn btn-white">Read More</a>
+                    <p>Champion Leagues</p>
+                    <h5>Everyone Deserves Opportunity</h5>
+                    <a href="about.php" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -43,7 +43,7 @@
                   <h4 class="number-b">2</h4>
                 </div>
                 <div class="banhny-w3grids-1">
-                  <h4><a href="#" class="hnys-title">The Only Realtor You Will Ever Want.</a></h4>
+                  <h4><a href="about.php" class="hnys-title">Providing Champion Services Under Once Roof.</a></h4>
                 </div>
               </div>
             </div>
@@ -55,9 +55,9 @@
               <div class="banner-info">
                 <div class="container">
                   <div class="banner-info-bg text-left">
-                    <p>Better living</p>
-                    <h5>Progressive spaces for a better living</h5>
-                    <a href="about.html" class="btn btn-white">Read More</a>
+                    <p>For the Champion in you</p>
+                    <h5>All around development</h5>
+                    <a href="about.php" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -66,12 +66,13 @@
                   <h4 class="number-b">3</h4>
                 </div>
                 <div class="banhny-w3grids-1">
-                  <h4><a href="#" class="hnys-title">Service You Deserve. People You Trust.</a></h4>
+                  <h4><a href="about.php" class="hnys-title">Service You Deserve. People You Can Trust.</a></h4>
                 </div>
               </div>
             </div>
           </li>
         </div>
+		<!----
         <div class="item">
           <li>
             <div class="slider-info banner-view banner-top3 bg bg2">
@@ -95,7 +96,7 @@
             </div>
           </li>
         </div>
-
+	---------->
 
       </div>
       <a href="#about" scroll="scroll">
