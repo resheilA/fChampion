@@ -1,4 +1,10 @@
-<?php include("header.php"); 
+<?php 
+include("header.php"); 
+
+if(!isset($_SESSION["playerid"]))
+{
+	header("location:login.php");	
+}
 
 if(isset($_GET["player"]))
 {
