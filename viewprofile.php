@@ -42,8 +42,8 @@ if(isset($_SESSION["player_id"]))
 		</h5>
 	
           <p class="mb-3 mt-1"><?php echo $rows[0]["players_school"]; ?></p>      
- <a href="#url" class="btn btn-style btn-primary mb-4">Edit Profile</a>
- <a href="#url" class="btn btn-style btn-primary mb-4">Manage Payment</a>
+ <a href="editprofile.php" class="btn btn-style btn-primary mb-4">Edit Profile</a>
+ <a href="managepayments.php" class="btn btn-style btn-primary mb-4">Manage Payment</a>
  <a href="#url" class="btn btn-style btn-primary mb-4">Your Coaching</a>
          		  
         </div>       	

@@ -51,13 +51,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	
 }
 ?>
-<?php if(isset($error_mysql)){echo "<script>alert('".$error_mysql."');</script>";} ?>
+
 <!--/grids-->
   <section class="w3l-grids-3 py-5" id="about">
     <div class="container py-md-5">
       <div class="row bottom-ab-grids align-items-center">
         <div class="col-lg-6 bottom-ab-left pr-lg-5 mt-5">
-          <h6 class="sub-title">Tranforming Champions</h6>
+          <h6 class="sub-title">Transforming Champions</h6>
           <h3 class="hny-title">Welcome Champion !</h3>
           <p class="my-3 pr-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio
             voluptatem

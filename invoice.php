@@ -1,4 +1,36 @@
+<?php 
+ob_start();
+session_start();
 
+if(!isset($_SESSION["player_id"]))
+{
+	header("location:login.php");	
+}
+?>
+<?php 
+	include("connect.php");
+	$rows[] = array(); 
+	
+	$sql = "SELECT *, paymentgateway_details.id as mainid, paymentgateway_details.timeadded as maintime FROM players_orders
+			INNER JOIN paymentgateway_details ON players_orders.order_id = paymentgateway_details.razorpay_order_id 
+			RIGHT JOIN packages ON packages.packages_id = players_orders.package_id 
+			RIGHT JOIN players ON players.players_id = players_orders.players_id 
+			WHERE players_orders.order_id = '".$_GET["inv"]."' AND players_orders.players_id= '".$_SESSION["player_id"]."'";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+	  // output data of each row
+	  while($row = $result->fetch_assoc()) {
+		//  echo "<pre>";
+		//var_dump($row);
+		$rows[] = $row;
+		//echo "</pre>";
+	  }
+	} else {
+	//  echo "0 results";
+	}
+	$conn->close();
+?>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,6 +44,7 @@
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <!-- Template CSS -->
 </head>
+<p><button onclick="window.print()">Print this page</button></p>
 
 <style>
 .padding {
@@ -52,27 +85,27 @@ h5 {
          <div class="card-header p-4">
              <a class="pt-2 d-inline-block img-fluid" href="index.html" data-abc="true"><img src="assets/images/logo.png" height="50" /></a>
              <div class="float-right">
-                 <h3 class="mb-0">Invoice #BBB10234</h3>
-                 Date: 12 Jun,2019
+                 <h3 class="mb-0">Invoice #CHM10<?php echo $rows[1]["mainid"]; ?></h3>
+                 Date: <?php echo date('M jS, Y', strtotime($rows[1]["maintime"])); ?>
              </div>
          </div>
          <div class="card-body">
              <div class="row mb-4">
                  <div class="col-sm-6">
-                     <h5 class="mb-3">From:</h5>
-                     <h3 class="text-dark mb-1">Tejinder Singh</h3>
-                     <div>29, Singla Street</div>
-                     <div>Sikeston,New Delhi 110034</div>
-                     <div>Email: contact@bbbootstrap.com</div>
-                     <div>Phone: +91 9897 989 989</div>
-                 </div>
-                 <div class="col-sm-6 ">
-                     <h5 class="mb-3">To:</h5>
-                     <h3 class="text-dark mb-1">Akshay Singh</h3>
+                     <h5 class="mb-3">From:</h5>                     
+                     <h3 class="text-dark mb-1">UPACA Shiksha Pariwar</h3>
                      <div>478, Nai Sadak</div>
                      <div>Chandni chowk, New delhi, 110006</div>
                      <div>Email: info@tikon.com</div>
                      <div>Phone: +91 9895 398 009</div>
+                 </div>
+                 <div class="col-sm-6 ">
+                     <h5 class="mb-3">To:</h5>
+					 <h3 class="text-dark mb-1"><?php echo $rows[1]["players_name"]; ?></h3>
+                     <div><?php echo $rows[1]["players_address"]; ?></div>
+                     <div>Pincode - <?php echo $rows[1]["players_pincode"]; ?></div>
+                     <div>Email: <?php echo $rows[1]["players_email"]; ?></div>
+                     <div>Phone: +91 <?php echo $rows[1]["players_contact_number"]; ?></div>
                  </div>
              </div>
              <div class="table-responsive-sm">
@@ -90,36 +123,12 @@ h5 {
                      <tbody>
                          <tr>
                              <td class="center">1</td>
-                             <td class="left strong">Iphone 10X</td>
-                             <td class="left">Iphone 10X with headphone</td>
-                             <td class="right">$1500</td>
-                             <td class="center">10</td>
-                             <td class="right">$15,000</td>
-                         </tr>
-                         <tr>
-                             <td class="center">2</td>
-                             <td class="left">Iphone 8X</td>
-                             <td class="left">Iphone 8X with extended warranty</td>
-                             <td class="right">$1200</td>
-                             <td class="center">10</td>
-                             <td class="right">$12,000</td>
-                         </tr>
-                         <tr>
-                             <td class="center">3</td>
-                             <td class="left">Samsung 4C</td>
-                             <td class="left">Samsung 4C with extended warranty</td>
-                             <td class="right">$800</td>
-                             <td class="center">10</td>
-                             <td class="right">$8000</td>
-                         </tr>
-                         <tr>
-                             <td class="center">4</td>
-                             <td class="left">Google Pixel</td>
-                             <td class="left">Google prime with Amazon prime membership</td>
-                             <td class="right">$500</td>
-                             <td class="center">10</td>
-                             <td class="right">$5000</td>
-                         </tr>
+                             <td class="left strong"><?php echo $rows[1]["packages_name"]; ?></td>
+                             <td class="left"><?php echo $rows[1]["packages_about"]; ?></td>
+                             <td class="right">Rs.<?php echo $rows[1]["payment"]; ?></td>
+                             <td class="center">1</td>
+                             <td class="right">Rs.<?php echo $rows[1]["payment"]; ?></td>
+                         </tr>                     
                      </tbody>
                  </table>
              </div>
@@ -133,25 +142,19 @@ h5 {
                                  <td class="left">
                                      <strong class="text-dark">Subtotal</strong>
                                  </td>
-                                 <td class="right">$28,809,00</td>
-                             </tr>
+                                 <td class="right">Rs. <?php echo $rows[1]["payment"]; ?></td>
+                             </tr>                             
                              <tr>
                                  <td class="left">
-                                     <strong class="text-dark">Discount (20%)</strong>
+                                     <strong class="text-dark">GST (18%)</strong>
                                  </td>
-                                 <td class="right">$5,761,00</td>
-                             </tr>
-                             <tr>
-                                 <td class="left">
-                                     <strong class="text-dark">VAT (10%)</strong>
-                                 </td>
-                                 <td class="right">$2,304,00</td>
+                                 <td class="right">Rs. <?php echo $rows[1]["payment"]*0.18; ?></td>
                              </tr>
                              <tr>
                                  <td class="left">
                                      <strong class="text-dark">Total</strong> </td>
                                  <td class="right">
-                                     <strong class="text-dark">$20,744,00</strong>
+                                     <strong class="text-dark">Rs. <?php echo $rows[1]["payment"] + ($rows[1]["payment"] * 0.18); ?></strong>
                                  </td>
                              </tr>
                          </tbody>
@@ -160,7 +163,7 @@ h5 {
              </div>
          </div>
          <div class="card-footer bg-white">
-             <p class="mb-0">BBBootstrap.com, Sounth Block, New delhi, 110034</p>
+             <p class="mb-0">Champion.in, Sounth Block, New delhi, 110034</p>
          </div>
      </div>
  </div>
