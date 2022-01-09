@@ -1,17 +1,17 @@
 <?php 
 include("header.php"); 
 
-if(!isset($_SESSION["playerid"]))
+if(!isset($_SESSION["player_id"]))
 {
 	header("location:login.php");	
 }
 
-if(isset($_GET["player"]))
+if(isset($_SESSION["player_id"]))
 {
 	include("connect.php");
 		
 	  $sql = "SELECT * FROM players				 
-				 WHERE players_id= '".$_SESSION["playerid"]."'
+				 WHERE players_id= '".$_SESSION["player_id"]."'
 				";
 	$result = $conn->query($sql);
 
