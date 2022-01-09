@@ -5,7 +5,7 @@ if(isset($_GET["player"]))
 	include("connect.php");
 		
 	  $sql = "SELECT * FROM players				 
-				 WHERE players_id= '".$_GET["player"]."'
+				 WHERE players_id= '".$_SESSION["playerid"]."'
 				";
 	$result = $conn->query($sql);
 
