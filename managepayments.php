@@ -59,3 +59,4 @@ if(!isset($_SESSION["player_id"]))
     </tbody>
   </table>
 </div>  
+<?php include("footer.php"); ?>
