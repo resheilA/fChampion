@@ -1,5 +1,6 @@
 <?php 
-
+include("header.php"); 
+ 
 if(isset($_GET["sport"]))
 {
 	if($_GET["sport"] == "football")
@@ -45,7 +46,6 @@ Author: W3layouts
 Author URL: http://w3layouts.com
 -->
  <!-- //header -->
- <?php include("header.php"); ?>
   <!--/grids-->
   <section class="w3l-grids-3 mt-5 pt-5" id="about">
     <div class="container py-md-5">
