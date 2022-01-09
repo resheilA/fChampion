@@ -119,7 +119,7 @@
           <p class="my-3 pr-lg-4">Champion.In Is India's First Unique Type Of Sports And Fitness Services Platform. The Platform Helps The Athlete To Find Trainers, Infrastructure, Sports Gears And Compete With Other Athletes, Etc. The Companies Vision Is To Build A Platform For The Athletes – Empowering Indian Talents By Developing Skills, Utilizing Experiences And Other Sports Resources Under One Roof</p>
           <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
         </div>
-        <div class="col-lg-3 bottom-ab-right mt-lg-0 mt-5">
+        <div class="col-lg-3 bottom-ab-right mt-lg-0 mt-5"><center>
           <img src="assets/images/clogo.png" class="img-fluid" alt="">
         </div>
 
@@ -128,23 +128,6 @@
   </section>
   <!--//grids-->
   
-  <!--/grids-->
-  <section class="w3l-grids-3 py-5" id="about">
-    <div class="container py-md-5">
-      <div class="row bottom-ab-grids align-items-center">
-		<div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
-          <img src="https://champion.in/images/running.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-6 bottom-ab-left pr-lg-5">
-          <h6 class="sub-title">Why Do We Exist ?</h6>
-          <h3 class="hny-title">Evolution of Sports</h3>
-          <p class="my-3 pr-lg-4">India is the home to many profound sports and games. The history of sports in India can also be traced back to Vedic times during the era of Ramayana and Mahabharata. There always existed a rugged competitiveness in sports like Archery, horsemanship, wrestling, weight-lifting, swimming and hunting. Gradually, there was adaptation of hundreds of sports and games from all around the globe. Now, India has established a name in almost every sports and games field to ever exist. This shows that Indians are sports aficionados and enthusiasts who are willing to dedicate their time and perseverance towards sports. For encouraging this devotion, Champion.in is established to offer the best amenities, equipment and training to the students who are willing to learn.</p>
-          <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
-        </div>        
-      </div>
-    </div>
-  </section>  
-  <!--/grids-->
   
   <!--/services-->
   <section class="w3l-services1">
@@ -196,6 +179,25 @@
     </div>
   </section>
   <!--//services-->
+  
+  <!--/grids-->
+  <section class="w3l-grids-3 py-5" id="about">
+    <div class="container py-md-5">
+      <div class="row bottom-ab-grids align-items-center">
+		<div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
+          <img src="https://champion.in/images/running.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 bottom-ab-left pr-lg-5">
+          <h6 class="sub-title">Why Do We Exist ?</h6>
+          <h3 class="hny-title">Evolution of Sports</h3>
+          <p class="my-3 pr-lg-4">India is the home to many profound sports and games. The history of sports in India can also be traced back to Vedic times during the era of Ramayana and Mahabharata. There always existed a rugged competitiveness in sports like Archery, horsemanship, wrestling, weight-lifting, swimming and hunting. Gradually, there was adaptation of hundreds of sports and games from all around the globe. Now, India has established a name in almost every sports and games field to ever exist. This shows that Indians are sports aficionados and enthusiasts who are willing to dedicate their time and perseverance towards sports. For encouraging this devotion, Champion.in is established to offer the best amenities, equipment and training to the students who are willing to learn.</p>
+          <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
+        </div>        
+      </div>
+    </div>
+  </section>  
+  <!--/grids-->
+  
   
   <!-- testimonials -->
   <section class="w3l-clients" id="clients">

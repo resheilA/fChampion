@@ -65,11 +65,29 @@ else
 			</div>
 			</li>
 			
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">         
-			  <a class="nav-link" href="about.php">Events</a>
+			<li class="nav-item mt-2">
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				About
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="about.php">About</a>
+				<a class="dropdown-item" href="team.php">Team</a>
+				<a class="dropdown-item" href="championclub.php">Champion's Club</a>				
+			  </div>
+			</div>
+			</li>
+			
+            <li class="nav-item mt-2">         
+			  <div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Events
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="acltennis.php">ACL - Tennis</a>
+				<a class="dropdown-item" href="aclkickboxing.php">ACL - Kick-boxing</a>				
+			  </div>
+			</div>
 			</li>
 
              <li class="nav-item">         

@@ -1,5 +1,11 @@
 <?php 
+ob_start();
 include("header.php");
+if(!isset($_SESSION["player_id"]))
+{
+	header("Location:login.php");
+}
+
 include("payment/razorpay-php/Razorpay.php");
 use Razorpay\Api\Api;
 
@@ -72,9 +78,12 @@ mysqli_close($conn);
 }
 
 ?>
+<Br><br><BR><BR><Br><br>
+<div class="col-lg-8">
 <center>
 Hello <?php echo $players_name; ?>! You are going to make a payment to Champion.in of Rs <?php echo $amount/100; ?>
-<button id="rzp-button1" style="margin:10em;">Pay</button>
+<button id="rzp-button1" style="margin:1em;">Pay</button>
+</div>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
 var options = {

@@ -3,13 +3,24 @@ ob_start();
 include("connect.php");
 include("header.php");
 
-if(isset($_SESSION["player_id"]))
+if(!isset($_SESSION["backpage"]))
 {
-	header("location:listcourse.php?sport=cricket");
+	if(!strstr($_SERVER['HTTP_REFERER'], 'login.php'))
+	{
+		$_SESSION["backpage"] = $_SERVER['HTTP_REFERER'];
+	}
 }
-else
+
+if(isset($_SESSION["player_id"]))	
 {
-	//echo "Here";
+	if(isset($_SESSION["backpage"]))
+	{		
+		header("location:".$_SESSION["backpage"]);
+	}
+	else
+	{
+		header("location:listcourse.php?sport=tennis");
+	}
 }
 
 
@@ -28,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		  while($row = mysqli_fetch_assoc($result)) {
 			 $_SESSION["username"] = $username;
 			 $_SESSION["player_id"] = $row["players_id"];
-			 header("location:listcourse.php?sport=cricket");
+			 header("location:".$_SERVER['HTTP_REFERER']);
 		  }
 		} else {
 			$error_mysql = '<div class="alert alert-danger">
@@ -62,7 +73,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 							<input type="submit" value="Submit"  class="btn btn-primary m-3">
 							<!-- Button to Open the Modal -->
 							</form>
-					
+							<center>								
+							<div style='border:1px solid black;' class="">
+							<p class="p-2">Not Registered With Champions Yet ?
+							&nbsp <a href="signup.php"><button class="btn btn-primary">Signup Now !</button></a>
+							</div>
+							
         </div>
 		
       </div>

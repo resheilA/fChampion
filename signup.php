@@ -51,6 +51,10 @@ include("savedata.php");
 							<input type="submit" value="Submit"  class="btn btn-primary m-3">
 							<!-- Button to Open the Modal -->
 							</form>
+							<div style='border:1px solid black;' class="col-lg-10">
+							<p class="p-2">Already Registered With Us ?
+							&nbsp <a href="login.php"><button class="btn btn-primary">Signin Here !</button></a>
+							</div>
 					
         </div>
 		
