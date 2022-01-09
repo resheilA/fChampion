@@ -3,12 +3,14 @@ ob_start();
 include("connect.php");
 include("header.php");
 
+if(isset($_SERVER['HTTP_REFERER'])){
 if(!isset($_SESSION["backpage"]))
 {
 	if(!strstr($_SERVER['HTTP_REFERER'], 'login.php'))
 	{
 		$_SESSION["backpage"] = $_SERVER['HTTP_REFERER'];
 	}
+}
 }
 
 if(isset($_SESSION["player_id"]))	

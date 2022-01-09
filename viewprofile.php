@@ -1,4 +1,5 @@
 <?php 
+ob_start();
 include("header.php"); 
 
 if(!isset($_SESSION["player_id"]))
@@ -10,9 +11,7 @@ if(isset($_SESSION["player_id"]))
 {
 	include("connect.php");
 		
-	  $sql = "SELECT * FROM players				 
-				 WHERE players_id= '".$_SESSION["player_id"]."'
-				";
+	$sql = "SELECT * FROM players WHERE players_id= '".$_SESSION["player_id"]."'";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
