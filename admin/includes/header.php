@@ -1,3 +1,17 @@
+<?php 
+ob_start();
+session_start();
+
+if(!isset($_SESSION["adminlogin"]) && $_SESSION["adminlogin"] != 1)
+{
+header("location:index.php");
+}
+else
+{
+	//var_dump($_SESSION);
+//	die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,7 +46,7 @@
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
