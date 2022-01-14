@@ -16,13 +16,18 @@ include("savedata.php");
 							<input type="text" name="dieticians|dieticians_pincode" value="" placeholder="Enter dietician pincode" value="" class="form-control"></br>
 							<textarea  class="form-control" name="dieticians|dieticians_about" placeholder="Enter summary about the dieticians in about 100 words"></textarea></br>	
 							<textarea  class="form-control" name="dieticians|dieticians_tags" placeholder="Enter tags for the dietician"></textarea></br>	
-							<b> Current Image </b><br><br>
-							<img src="<?php if(isset($image_bg)){echo $image_bg;}; ?>"/><br><br>
-							Upload a new image to change it :
+							<textarea  class="form-control" name="dieticians|dieticians_achievements" placeholder="Enter your achievments"></textarea><br>
+							<textarea  class="form-control" name="dieticians|dieticians_certifications" placeholder="Enter your certification"></textarea><br>
+							<b> Current Photo </b>
+							<img src="<?php if(isset($image_bg)){echo $image_bg;}; ?>"/><br>
+							Upload a latest photo :
 							<input type="file" name="dieticians|dieticians_image|0|dieticians" id="fileToUpload">
 							<hr>
-							<input type="submit" value="Submit"  class="btn btn-primary">
-							<!-- Button to Open the Modal -->
+							<b> Upload the undertaking file by scanning. Click here to download the form. </b> 
+							<img src="<?php if(isset($image_bg)){echo $image_bg;}; ?>"/><br>
+							Image file of your undertaking:
+							<input type="file" name="dieticians|dieticians_image|0|dieticians" id="fileToUpload">
+							<hr>
 					</div>					
 				</main>					
 

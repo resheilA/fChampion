@@ -16,8 +16,6 @@ include("savedata.php");
 							<input type="text" name="mentors|mentors_pincode" value="" placeholder="Enter mentor pincode" value="" class="form-control"></br>
 							<textarea  class="form-control" name="mentors|mentors_about" placeholder="Enter summary about the mentors in about 100 words"></textarea></br>	
 							<textarea  class="form-control" name="mentors|mentors_tags" placeholder="Enter tags for the mentor"></textarea></br>	
-							<b> Current Image </b><br><br>
-							<img src="<?php if(isset($image_bg)){echo $image_bg;}; ?>"/><br><br>
 							Upload a new image to change it :
 							<input type="file" name="mentors|mentors_image|0|mentors" id="fileToUpload">
 							<hr>

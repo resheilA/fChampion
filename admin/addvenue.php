@@ -17,10 +17,11 @@ include("savedata.php");
 							<input type="text" name="venues|venues_pincode" value="" placeholder="Enter venue pincode" value="" class="form-control"></br>
 							<textarea  class="form-control" name="venues|venues_about" placeholder="Enter summary about the venues in about 100 words"></textarea></br>	
 							<textarea  class="form-control" name="venues|venues_tags" placeholder="Enter tags for the venues"></textarea></br>	
-							<b> Current Image </b><br><br>
+							<b> Add Images </b>
 							<img src="<?php if(isset($image_bg)){echo $image_bg;}; ?>"/><br><br>
-							Upload a new image to change it :
 							<input type="file" name="venues|venues_image|0|venues" id="fileToUpload">
+							<input type="file" name="venues|venues_image1|0|venues" id="fileToUpload">
+							<input type="file" name="venues|venues_image2|0|venues" id="fileToUpload">
 							<hr>
 							<input type="submit" value="Submit"  class="btn btn-primary">
 							<!-- Button to Open the Modal -->
