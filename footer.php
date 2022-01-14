@@ -20,7 +20,9 @@
                 <div class="col-md-4 column mt-md-0 mt-4">
                   <h3>Useful Links</h3>
                   <ul class="footer-gd-16">
-                    <li><a href="#url">Offers</a></li>
+                    <li><a href="registertrainer.php">Register as a Trainer</a></li>
+					<li><a href="registertrainer.php">Register as a Dietician</a></li>
+					<li><a href="registertrainer.php">Register as a Physiotherapist</a></li>
                     <li><a href="#url">Our Branches</a></li>
                     <li><a href="#url">Latest Media</a></li>
                     <li><a href="about.html">About Company</a></li>

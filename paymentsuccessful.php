@@ -7,7 +7,7 @@ include("connect.php");
 use Razorpay\Api\Api;
 
 $api = new Api($api_key, $api_secret);
-$attributes  = array('razorpay_signature'  => $_POST["razorpay_signature"],  'razorpay_payment_id'  => $_POST["razorpay_payment_id"] ,  'razorpay_order_id' => 'order_IgZyorMjHRc67t');
+$attributes  = array('razorpay_signature'  => $_POST["razorpay_signature"],  'razorpay_payment_id'  => $_POST["razorpay_payment_id"] ,  'razorpay_order_id' => $_SESSION["current_order_id"]);
 
 try
 {
@@ -22,24 +22,26 @@ catch(Exception $e) {
 <div class="col-12 mt-5">
 <center>
 <?php 
-if(isset($order) && $order == null){
+if($order == null){
 	
 $sql = "INSERT INTO paymentgateway_details(razorpay_payment_id, razorpay_order_id,razorpay_signature)
 VALUES ('".$_POST["razorpay_payment_id"]."', '".$_POST["razorpay_order_id"]."', '".$_POST["razorpay_signature"]."')";
 
 if (mysqli_query($conn, $sql)) {
-  //echo "New record created successfully";
+//  echo "New record created successfully";
 }
 mysqli_close($conn);	
 	
-$status = 1;	
+$status = 0;	
 }
 else
 {
-$status = 0;		
+echo "here";
+$status = 1;		
 }
 //var_dump($order);
 //var_dump($_SESSION);
+//die();
 ?>
 <img class="img-fluid" src="<?php echo $_POST["checkout_logo"]; ?>"/>
 <?php 

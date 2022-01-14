@@ -44,6 +44,7 @@ if(!isset($_SESSION["player_id"]))
     </thead>
     <tbody>
 	<?php 
+		if(isset($rows))
 	  foreach($rows as $row)	
 	  {
 			echo '

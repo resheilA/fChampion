@@ -29,10 +29,10 @@ if(isset($_GET["package"]))
 	if ($result->num_rows > 0) {
 	  // output data of each row
 	  while($row = $result->fetch_assoc()) {
-	//	  echo "<pre>";
+		//  echo "<pre>";
 		//var_dump($row);
 		$rows[] = $row;
-	//	echo "</pre>";
+		//echo "</pre>";
 	  }
 	} else {
 	//  echo "0 results";
@@ -58,8 +58,21 @@ Author URL: http://w3layouts.com
           <h3 class="hny-title">
            <?php echo $rows[0]["packages_name"]; ?> </h3>
           <p class="my-3 pr-lg-4"><?php echo $rows[0]["packages_about"]; ?></p>
-		  	<h4>Rs <?php echo $rows[0]["packages_price"]; ?> / per month </h4>
-          <form method="post" action="payment.php">		  			
+		  <form method="post" action="payment.php">		
+			<?php 
+			 if($rows[0]["package_price_accom"] != $rows[0]["packages_price"])
+			 {
+				 echo '
+		  	<select name="choosepack" class="form-control">			
+			<option value="1"><h4>Rs '.$rows[0]["packages_price"].' / per month without accommodation</h4></option>			
+			<option value="2"><h4>Rs '.$rows[0]["package_price_accom"].' / per month with accommodation</h4></option>
+			</select>         ';
+			 }
+			 else
+			 {
+				 echo '<h4>Rs '.$rows[0]["packages_price"].' / per month</h4>';
+			 }
+			?> 
 		  <input type="hidden" name="packageid"	value="<?php echo $_GET["package"]; ?>">
 		  <input type="hidden" name="playerid"	value="<?php echo $_SESSION["player_id"]; ?>">
 		  <input type="submit" class="btn btn-secondary dropdown-toggle mt-2" type="button" value="Register today">			  
@@ -67,7 +80,7 @@ Author URL: http://w3layouts.com
         </div>      
       </div>
     </div>
-
+	</section>
 <!-- /call to action 5 -->
   <section class="w3l-features14">  
     <div class="w3l-feature-6-main py-5" style='background-image: url("<?php echo "admin/".$rows[0]["venues_image"]; ?>")'>

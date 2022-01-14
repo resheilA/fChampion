@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
   include("connect.php");
-  
+   
   $sql = "SELECT * FROM packages_price WHERE packages_id= '".$_POST["packageid"]."'";
 	$result = $conn->query($sql);
 
@@ -23,7 +23,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	  while($row = $result->fetch_assoc()) {
 	//	  echo "<pre>";
 		//var_dump($row);
+		if($_POST["choosepack"] == 1)
+		{
 		$package_price = $row["packages_price"];
+		}
+		else if($_POST["choosepack"] == 2)
+		{
+		$package_price = $row["package_price_accom"];		
+		}
 	//	echo "</pre>";
 	  }
 	} else {
