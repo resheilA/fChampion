@@ -50,10 +50,24 @@ else
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">		  		
-           
+				
 			<li class="nav-item mt-2">
 			<div class="dropdown">
-			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				About
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="about.php">About</a>
+				<a class="dropdown-item" href="team.php">Team</a>
+				<a class="dropdown-item" href="ouratheletes.php">Our Athletes</a>				
+				<a class="dropdown-item" href="championclub.php">Champion's Club</a>				
+			  </div>
+			</div>
+			</li>
+			
+			<li class="nav-item mt-2">
+			<div class="dropdown">
+			  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Sports
 			  </button>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -64,23 +78,11 @@ else
 			  </div>
 			</div>
 			</li>
-			
-			<li class="nav-item mt-2">
-			<div class="dropdown">
-			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				About
-			  </button>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="about.php">About</a>
-				<a class="dropdown-item" href="team.php">Team</a>
-				<a class="dropdown-item" href="championclub.php">Champion's Club</a>				
-			  </div>
-			</div>
-			</li>
+		
 			
             <li class="nav-item mt-2">         
 			  <div class="dropdown">
-			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Events
 			  </button>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

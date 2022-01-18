@@ -116,7 +116,11 @@
         <div class="col-lg-8 bottom-ab-left pr-lg-5">
           <h6 class="sub-title">About Us</h6>
           <h3 class="hny-title">Welcome to Champion.in</h3>
-          <p class="my-3 pr-lg-4">Champion.In Is India's First Unique Type Of Sports And Fitness Services Platform. The Platform Helps The Athlete To Find Trainers, Infrastructure, Sports Gears And Compete With Other Athletes, Etc. The Companies Vision Is To Build A Platform For The Athletes – Empowering Indian Talents By Developing Skills, Utilizing Experiences And Other Sports Resources Under One Roof</p>
+          <p class="my-3 pr-lg-4">Champion. In is India's First Unique Sports and Fitness Service Platform. 
+
+We help in creating athletes of our country by providing classroom training from the experienced trainers, sports gear, and infrastructure and make them to compete with global champions.
+
+Here we empower Indian talent in developing skills with experience & other sports resources under one roof.</p>
           <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
         </div>
         <div class="col-lg-3 bottom-ab-right mt-lg-0 mt-5"><center>
@@ -180,7 +184,7 @@
   </section>
   <!--//services-->
   
-  <!--/grids-->
+  <!--/grids--
   <section class="w3l-grids-3 py-5" id="about">
     <div class="container py-md-5">
       <div class="row bottom-ab-grids align-items-center">

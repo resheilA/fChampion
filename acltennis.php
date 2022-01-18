@@ -47,7 +47,7 @@ if(isset($_GET["package"]))
     <div class="container py-md-5">
       <div class="row bottom-ab-grids align-items-center">
 	   <div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
-          <img src="assets/images/clogo.png" class="img-fluid" alt="">
+          <img src="assets/images/acl.jpeg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-6 bottom-ab-left pr-lg-5">
           <h6 class="sub-title">For the Champion in you !</h6>

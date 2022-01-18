@@ -105,14 +105,14 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mt-lg-5">
             <div class="box16">
-              <a href="https://www.linkedin.com/in/ca-uttam-prakash-agarwal-93243370/">
-			  <img src="assets/images/uttam.jpg" style="height:24em;" alt="" class="img-fluid" /></a>
+              <a href="https://www.linkedin.com/in/ca-dhaval-jain-45a282227/">
+			  <img src="assets/images/dhaval.png" style="height:24em;" alt="" class="img-fluid" /></a>
               <div class="box-content">
-                <h3 class="title"><a  target="_blank" href="https://www.linkedin.com/in/ca-uttam-prakash-agarwal-93243370/">CA. Dhaval Jain</a></h3>
+                <h3 class="title"><a  target="_blank" href="https://www.linkedin.com/in/ca-dhaval-jain-45a282227/">CA. Dhaval Jain</a></h3>
                 <span class="post"></span>
                 <ul class="social">
                   <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/ca-uttam-prakash-agarwal-93243370/" class="facebook">
+                    <a target="_blank" href="https://www.linkedin.com/in/ca-dhaval-jain-45a282227/" class="facebook">
                       <span class="fa fa-linkedin"></span>
                     </a>
                   </li>
