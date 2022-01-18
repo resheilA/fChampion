@@ -60,7 +60,7 @@ if(isset($_GET["sport"]))
 				'
 				<div class="cwp4-image col-lg-4 col-md-6">
 					<div class="grids4-info">
-					  <a href="blockcoursedetails.php?package='.$row["packages_id"].'"><img src="assets/images/g1.jpg" class="img-fluid" alt="">
+					  <a href="blockcoursedetails.php?package='.$row["packages_id"].'"><img src="admin/'.$row["packages_image"].'" class="img-fluid" alt="">
 					  <div class="info-bg">
 						  <h5>'.$row["packages_name"].'</h5>
 						  <span class="price">Rs 2400/month</span>
