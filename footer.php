@@ -32,8 +32,8 @@
                 <div class="col-md-4 column mt-md-0 mt-4">
                   <h3>Our Services</h3>
                   <ul class="footer-gd-16">
-                    <li><a href="#url">Privacy Policy</a></li>
-                    <li><a href="#url">Our Terms</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
+                    <li><a href="terms.php">Our Terms</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="#">Landing Page</a></li>
                     <li><a href="#url">Our Agents</a></li>
