@@ -154,24 +154,7 @@ Author URL: http://w3layouts.com
   </section>
   <!--/-->
   
-  <section class="w3l-grids-3 py-5" id="about">
-    <div class="container py-md-5">
-      <div class="row bottom-ab-grids align-items-center">
-        <div class="col-lg-6 bottom-ab-left pr-lg-5">
-          <h6 class="sub-title">Be A Professional</h6>
-          <h3 class="hny-title">
-           <?php echo $rows[0]["kits_name"]; ?></h3>
-          <p class="my-3 pr-lg-4"><?php echo $rows[0]["kits_about"]; ?></p>
-          <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
-        </div>
-        <div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
-          <img src="<?php echo "admin/".$rows[0]["kits_image"]; ?>" class="img-fluid" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  
 
 
  <!--/services-->
@@ -291,6 +274,32 @@ Author URL: http://w3layouts.com
       </div>
     </div>
 </section>    
+
+
+<!-----------------------KIT -------------------------->
+
+<section class="w3l-grids-3 py-5" id="about">
+    <div class="container py-md-5">
+      <div class="row bottom-ab-grids align-items-center">
+        <div class="col-lg-6 bottom-ab-left pr-lg-5">
+          <h6 class="sub-title">Be A Professional</h6>
+          <h3 class="hny-title">
+           <?php echo $rows[0]["kits_name"]; ?></h3>
+          <p class="my-3 pr-lg-4"><?php echo $rows[0]["kits_about"]; ?></p>
+          <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
+        </div>
+        <div class="col-lg-6 bottom-ab-right mt-lg-0 mt-5">
+          <img src="<?php echo "admin/".$rows[0]["kits_image"]; ?>" class="img-fluid" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
 
 <section class="w3l-cta5">
     <div class="call-to-action-5 py-5">

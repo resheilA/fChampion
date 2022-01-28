@@ -59,21 +59,11 @@ else
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" href="about.php">About</a>
 				<a class="dropdown-item" href="team.php">Team</a>
-				<a class="dropdown-item" href="ouratheletes.php">Our Athletes</a>								
+				<a class="dropdown-item" href="ouratheletes.php">Our Champions</a>								
 			  </div>
 			</div>
 			</li>
-						
-			<li class="nav-item mt-2">
-			<div class="dropdown">
-			  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Champion's Club
-			  </button>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="championclub.php">CA Pariwar Club</a>				
-			  </div>
-			</div>
-			</li>
+
 			
 			
 			<li class="nav-item mt-2">
@@ -103,6 +93,19 @@ else
 			</div>
 			</li>
 
+
+									
+			<li class="nav-item mt-2">
+			<div class="dropdown">
+			  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Champion's Club
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="championclub.php">CA Pariwar Club</a>				
+			  </div>
+			</div>
+			</li>
+			
              <li class="nav-item">         
 			  <?php 
 			  if($login == 1)	
@@ -121,8 +124,9 @@ else
 			
 		
             <div class="search-right">
+			<!--- 
               <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
-              <!-- search popup -->
+              --->
               <div id="search" class="pop-overlay">
                 <div class="popup">
 

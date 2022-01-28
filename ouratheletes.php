@@ -4,8 +4,7 @@
   <br><br><br>
     <div class="team-block py-5">
       <div class="container py-lg-5">
-        <div class="title-content text-center mb-lg-3 mb-4">
-          <h6 class="sub-title">Our Athletes</h6>
+        <div class="title-content text-center mb-lg-3 mb-4">          
           <h3 class="hny-title">Meet Our Team Of Champions</h3>
         </div>
         <div class="row">

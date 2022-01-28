@@ -11,7 +11,7 @@
                   <div class="banner-info-bg text-left">
                     <p>Play offs</p>
                     <h5>Making Sports Accessible</h5>
-                    <a href="about.php" class="btn btn-white">Read More</a>
+                    <a href="http://localhost/fchampion/listcourse.php?sport=tennis" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -34,7 +34,7 @@
                   <div class="banner-info-bg text-left">
                     <p>Champion Leagues</p>
                     <h5>Everyone Deserves Opportunity</h5>
-                    <a href="about.php" class="btn btn-white">Read More</a>
+                    <a href="http://localhost/fchampion/acltennis.php" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@
                   <div class="banner-info-bg text-left">
                     <p>For the Champion in you</p>
                     <h5>All around development</h5>
-                    <a href="about.php" class="btn btn-white">Read More</a>
+                    <a href="http://localhost/fchampion/championclub.php" class="btn btn-white">Read More</a>
                   </div>
                 </div>
               </div>
@@ -116,12 +116,8 @@
         <div class="col-lg-8 bottom-ab-left pr-lg-5">
           <h6 class="sub-title">About Us</h6>
           <h3 class="hny-title">Welcome to Champion.in</h3>
-          <p class="my-3 pr-lg-4">Champion. In is India's First Unique Sports and Fitness Service Platform. 
-
-We help in creating athletes of our country by providing classroom training from the experienced trainers, sports gear, and infrastructure and make them to compete with global champions.
-
-Here we empower Indian talent in developing skills with experience & other sports resources under one roof.</p>
-          <a href="about.html" class="btn btn-style btn-secondary mt-4">Read More</a>
+          <p class="my-3 pr-lg-4">Champion.In is India's first unique sports and fitness service platform. We empower our athletes under one roof by providing them world class infrastructure, international level of sport gears and classroom training from skilled trainers to compete with global champions.</p>
+          <a href="about.php" class="btn btn-style btn-secondary mt-4">Read More</a>
         </div>
         <div class="col-lg-3 bottom-ab-right mt-lg-0 mt-5"><center>
           <img src="assets/images/clogo.png" class="img-fluid" alt="">
