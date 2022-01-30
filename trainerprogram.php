@@ -1,54 +1,22 @@
 <?php include("header.php"); ?>
  <br><br>
-<section class="w3l-features14">  
-    <div class="w3l-feature-6-main py-5" style="background-image: url('assets/images/trainer.jpg')">
-	 <div class="header-section text-center">
-       
-      </div>
-      <div class="container mt-5 mb-5">
-        <div class="wrapper-max">          
-           
-            <div class="w3l-feature-6-gd mt-4">
-              <div class="w3l-feature-6-gd-info">	       
-			   <h1 class="hny-title two">Quality Sports Training </h1>                  
-					<h5>
-					</h5>
-				<p class="pr-lg-5">Find Experienced, Certified and Verified Sports Professional to coach you at your nearest venue with world class sports gear and equipments provided by Champion.in
-				</p><Br>
-				<div class="row"> 
-					<div class="col-lg-3">
-						<form method="get" action="blocklistcourse.php">
-						<p class="pr-lg-5 text-white">Which sport you want to train ?<br></p>
-						<select name="sport" class="form-control bg-white" id="sel1">
-							<option>Select your Sports</option>
-							<option value="football">Football</option>
-							<option value="cricket">Cricket</option>
-							<option value="tennis">Tennis</option>
-							<option value="kickboxing">Kick-boxing</option>
-						  </select>
-					</div>
-					<div class="col-lg-3">
-						<p class="pr-lg-5 text-white">Where are you located?<br></p>
-						<select name="place" class="form-control bg-white" id="sel1" onchange="this.form.submit()">
-							<option>Select your area</option>
-							<option>Thane</option>
-							<option>Bhiwandi</option>
-							<option>Bhayander</option>
-							<option>Miraroad</option>
-						  </select>
-					 </div>	
-					 <div class="col-lg-2">						
-					 <p class="pr-lg-5 text-white"><br></p>
-						<input type="submit" value="Search" class="form-control btn-success">
-						</form>
-					 </div>	
-				 </div>	
-              </div>
-            </div>            
+<section class="w3l-grids-3 py-5" id="about">
+    <div class="container py-md-5">
+      <div class="row bottom-ab-grids align-items-center">
+        <div class="col-lg-8 bottom-ab-left pr-lg-5 mt-4">
+		  <h3 class="hny-title">Earn More. Earn Respect.<br> Safety Ensured.</h3>
+          <p class="my-3 pr-lg-4">Champion.In is India's first unique sports and fitness service platform. We empower our athletes under one roof by providing them world class infrastructure, international level of sport gears and classroom training from skilled trainers to compete with global champions.</p>
+          <a href="trainerprogram.php#register" class="btn btn-style btn-secondary mt-4">Register Now </a>
         </div>
+        <div class="col-lg-3 bottom-ab-right mt-lg-0 mt-5">
+		<center>	
+			 <img src="assets/images/dietician.png" class="img-fluid" alt="" style="width:25em;">
+		</center>
+		</div>
+
       </div>
     </div>
-  </div></section>
+  </section>
 
 
  <!-- main-slider -
@@ -149,60 +117,55 @@
           </li>
         </div>
 	---------->
-
-
-
-<section class="w3l-cta5">
-    <div class="call-to-action-5 py-5">
-      <div class="container py-lg-5">
-        <div class="call-to-action-5-content text-center">
-          <h3 class="hny-title">Why Champion.in ?</h3>
-          <p>100% Quality Assured. If you don't like our serivces we will make it right.</p>
-          <div class="three-grids row">
-            <div class="col-lg-4 col-md-6 grid mt-md-0 mt-4">
-              <div class="icon">
-                <span class="fa fa-money" aria-hidden="true"></span>
-              </div>
-              <div class="icon-info">
-                <h4><a href="#">Fixed Pricing</a></h4>
-                <p>See fixed price before you book. No hidden Charges.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 grid mt-md-0 mt-4">
-              <div class="icon">
-                <span class="fa fa-star" aria-hidden="true"></span>
-              </div>
-              <div class="icon-info">
-                <h4><a href="">Expert Professional</a></h4>
-                <p>Our professionals are well trained, certified and on-job expirence.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 grid">
-              <div class="icon">
-                <span class="fa fa-suitcase" aria-hidden="true"></span>
-              </div>
-              <div class="icon-info">
-                <h4><a href="#">Fully Equipped</a></h4>
-                <p>We bring world class expertises with right type of sports gear under nearst one roof.</p>
+<!--/services-->
+  <section class="w3l-services1" id="register">
+    <div id="content-with-photo4-block" class="py-5">
+      <div class="container py-md-5">
+       
+        <div class="cwp4-two row">
+          <div class="cwp4-image col-lg-4 col-md-6">
+            <div class="grids4-info"><center>
+              <a href="#"><img src="assets/images/dieticon.png" class="img-fluid rounded-circle" style="width:12em;height:12em;" alt=""></a>
+              <div class="info-bg">
+                <h5><a href="#">Nutritionist</a></h5>				
+                <p> 
+				</p>		
+				<a href="registerdietcian.php"><button class="btn-success btn-lg">Register as Dietician</button></a>		
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-	
-	
-      </div>
-      <a href="#about" scroll="scroll">
-        <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </a>
-    </div>
-  </section>
-  <!-- /main-slider -->
+        
+           		
+			<div class="cwp4-image col-lg-4 col-md-6">
+				<div class="grids4-info"><center>
+				  <a href="#"><img src="assets/images/coach.png" class="img-fluid rounded-circle" style="width:12em;height:12em;" alt=""></a>
+				  <div class="info-bg">
+					<h5><a href="#">Trainer</a></h5>
+					
+					<p>
+					</p>
+					<a href="registertrainer.php"><button class="btn-success btn-lg">Register as Trainer</button></a>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="cwp4-image col-lg-4 col-md-6">
+            <div class="grids4-info"><center>
+              <a href="#"><img src="assets/images/physio.png" class="img-fluid rounded-circle" style="width:12em;height:12em;"  alt=""></a>
+              <div class="info-bg">
+                <h5><a href="#">Physiotherapist</a></h5>
+              
+				
+                <p>
+					</p>				
+						<a href="registerphysiotherapist.php"><button class="btn-success btn-lg">Register as Physiotherapist</button></a>
+              </div>
+            </div>
+          </div>	
+			  
+</section> 
+
+
   <!--/grids-->
   <section class="w3l-grids-3 py-5" id="about">
     <div class="container py-md-5">

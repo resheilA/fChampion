@@ -10,23 +10,22 @@
                 <div class="col-md-4 column">
                   <h3>Company</h3>
                   <ul class="footer-gd-16">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="team.php">Our Team</a></li>
+					<li><a href="ouratheletes.php">Our Champions</a></li>                    
+					<li><a href="careers.php">We are hiring !</a></li>                    
+                    <li><a href="contact.html">Contact Us</a></li>					
                   </ul>
                 </div>
                 <div class="col-md-4 column mt-md-0 mt-4">
                   <h3>Useful Links</h3>
                   <ul class="footer-gd-16">
-                    <li><a href="registertrainer.php">Register as a Trainer</a></li>
+                    <li><a href="signup.php">Register as a player</a></li>
+					<li><a href="registertrainer.php">Register as a Trainer</a></li>
 					<li><a href="registertrainer.php">Register as a Dietician</a></li>
 					<li><a href="registertrainer.php">Register as a Physiotherapist</a></li>
-                    <li><a href="#url">Our Branches</a></li>
-                    <li><a href="#url">Latest Media</a></li>
-                    <li><a href="about.html">About Company</a></li>
-                    <li><a href="#url">Our Packages</a></li>
+					<li><a href="blocklistcourse.php?sport=tennis">Our Packages</a></li>
                   </ul>
                 </div>
                 <div class="col-md-4 column mt-md-0 mt-4">
@@ -34,22 +33,16 @@
                   <ul class="footer-gd-16">
                     <li><a href="privacy.php">Privacy Policy</a></li>
                     <li><a href="terms.php">Our Terms</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#">Landing Page</a></li>
-                    <li><a href="#url">Our Agents</a></li>
+                    <li><a href="payment.php">Payment Terms</a></li>
+                    <li><a href="refund.php">Refund Policy</a></li>                    
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-              <h3>Newsletter </h3>
+              
               <div class="end-column">
-                <h4>Get latest updates and offers.</h4>
-                <form action="#" class="subscribe" method="post">
-                  <input type="email" name="email" placeholder="Email Address" required="">
-                  <button type="submit">Go</button>
-                </form>
-                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+                <img src="assets/images/logo.png" class="img-fluid">
               </div>
             </div>
           </div>

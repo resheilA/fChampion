@@ -51,20 +51,12 @@ else
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">		  		
 				
-			<li class="nav-item mt-2">
-			<div class="dropdown">
-			  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				About
-			  </button>
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="about.php">About</a>
-				<a class="dropdown-item" href="team.php">Team</a>
-				<a class="dropdown-item" href="ouratheletes.php">Our Champions</a>								
-			  </div>
-			</div>
-			</li>
-
 			
+				<li class="nav-item"> 			
+					<li class="nav-item">         
+					  <a class="nav-link" href="trainerprogram.php">Register as a professional</a>
+					  </li>
+			</li>
 			
 			<li class="nav-item mt-2">
 			<div class="dropdown">
@@ -72,10 +64,10 @@ else
 				Sports
 			  </button>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="listcourse.php?sport=kickboxing">Kick-boxing</a>
-				<a class="dropdown-item" href="listcourse.php?sport=tennis">Lawn Tennis</a>
-				<a class="dropdown-item" href="listcourse.php?sport=cricket">Cricket</a>
-				<a class="dropdown-item" href="listcourse.php?sport=football">Football</a>
+				<a class="dropdown-item" href="blocklistcourse.php?sport=kickboxing">Kick-boxing</a>
+				<a class="dropdown-item" href="blocklistcourse.php?sport=tennis">Lawn Tennis</a>
+				<a class="dropdown-item" href="blocklistcourse.php?sport=cricket">Cricket</a>
+				<a class="dropdown-item" href="blocklistcourse.php?sport=football">Football</a>
 			  </div>
 			</div>
 			</li>
@@ -92,9 +84,7 @@ else
 			  </div>
 			</div>
 			</li>
-
-
-									
+							
 			<li class="nav-item mt-2">
 			<div class="dropdown">
 			  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
