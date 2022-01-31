@@ -88,7 +88,7 @@ mysqli_close($conn);
 <Br><br><BR><BR><Br><br>
 <div class="col-lg-8">
 <center>
-Hello <?php echo $players_name; ?>! You are going to make a payment to Champion.in of Rs <?php echo $amount/100; ?>
+Hello <?php echo $players_name; ?>! You are going to make a payment to Champion.in of Rs <?php echo $amount/100; ?> (inclusive of GST) 
 <button id="rzp-button1" style="margin:1em;">Pay</button>
 </div>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

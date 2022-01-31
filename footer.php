@@ -48,22 +48,19 @@
           </div>
           <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
             <div class="columns text-lg-left text-center">
-              <p>&copy; 2020 Homish. All rights reserved.Design by <a href="https://w3layouts.com/" target="_blank">
-                  W3Layouts</a>
+              <p>&copy; <?php echo Date("Y"); ?> Champion.in. All rights reserved.
               </p>
             </div>
             <div class="columns-2 mt-lg-0 mt-3">
               <ul class="social">
-                <li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                <li><a href="https://www.instagram.com/champion.india/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
                 </li>
-                <li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                <li><a href="https://www.facebook.com/sportschampionindia"><span class="fa fa-facebook" aria-hidden="true"></span></a>
                 </li>
-                <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                <li><a href="https://www.linkedin.com/company/67182745/admin/"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
                 </li>
-                <li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
-                </li>
-                <li><a href="#github"><span class="fa fa-github" aria-hidden="true"></span></a>
-                </li>
+                <li><a href="https://twitter.com/GoChampion4"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                </li>                
               </ul>
             </div>
           </div>
